@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompts</title>
+</head>
+<body>
+  <form action='/story' method='GET'>
+    {% for prompt in prompts %}
+      <p>
+        {{ prompt }}
+        <input name='{{ prompt }}'>
+      </p>
+    {% endfor %}
+    <button type='submit'>Submit</button>
+  </form>
+</body>
+</html>
